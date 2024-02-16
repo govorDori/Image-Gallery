@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        img{
+            max-width: 300px;
+            object-fit: cover;
+        }
+
+        .loading{
+            background-color: red;
+            color: aliceblue;
+            position: fixed;
+            right: 0;
+            font-size: 2rem;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        #typeSearch{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <script type="module" src="main.js"></script>
+
+    <input type="text" id="typeSearch" placeholder="Click here to search">
+    <button>Search</button>
+    <div class="loading">Loading...</div>
+    <div class="image-gallery"></div>
+</body>
+</html>
